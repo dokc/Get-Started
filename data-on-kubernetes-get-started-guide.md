@@ -31,12 +31,63 @@ Provide basic knowledge of what stateful means in Kubernetes
 
 ### Types of workloads
 
+#### Purpose
+Provide a list of stateful workloads that exist on Kubernetes and a description/examples of each workload
+Stateful Workloads
+
+- Databases (stateful sets or CRD)
+- AI/ML (usually jobs)
+- Batch processing jobs
+- Stream processing
+- Machine learning and AI workloads
+- Data analytics
+- ETL (Extract, Transform, Load) pipelines
+- Data warehousing						
+- Distributed databases
+- In-memory data grids
+- Time series databases
+- Search and indexing engines
+
+
 ### Operators 101
+#### Purpose
+Provide resources explaining what operators are and what role they play in running data workloads on kubernetes
+
+#### Resources:
+- What is a kubernetes Operator: https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator
+- What are Kubernetes Operators (Operators 101 :part 1) : https://sklar.rocks/what-are-kubernetes-operators/
+- Operator Pattern: https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+- Custom Resource Definitions : https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
+- An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2) : https://sklar.rocks/kubernetes-custom-resource-definitions/
+- Operator Hub: https://operatorhub.io/
+https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
+
 
 ### Common Tools
+#### Purpose
+Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
+
+#### Resources:
+- MiniKube: Used for running kubernetes locally
 
 ### Ecosystem 101
+#### Purpose
+Describe all of the open source projects that are a part of the DoK Ecosystem
+
+#### Resources:
+- DoK Landscape: https://dok.community/landscape/
+= Kafka
+- Spark
+- Kubeflow
 
 ### Deploy your first database on kubernetes
+#### Purpose
+In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes
+
+#### Resources:
 
 ### Next Steps
+#### Purpose
+In this section, we'll list some resources to push you to the next level of understanding.
+
+#### Resources:
