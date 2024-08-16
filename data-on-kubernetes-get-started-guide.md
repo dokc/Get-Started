@@ -22,7 +22,12 @@ We will break the content into sections in a logical order to guide someone from
 - [Deploy your first database on kubernetes](#deploy-you-first-database-on-kubernetes)
 - [Next Steps](#next-steps)
 
-### Intro to Stateful
+### Intro to Stateful 
+#### Purpose: 
+Provide basic knowledge of what stateful means in Kubernetes
+#### Resources
+- [Documentation on Stateful Sets from Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/){:target="_blank"} 
+- [Stateful Workloads in Kubernetes: A Deep Dive - Kaslin Fields & Michelle Au, Google](https://youtu.be/688K9UlEbPk?si=BNH7a5JWMlZWtbyU){:target="_blank"} 
 
 ### Types of workloads
 
