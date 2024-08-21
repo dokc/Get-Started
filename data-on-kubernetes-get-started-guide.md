@@ -81,18 +81,18 @@ Provide resources explaining what operators are and what role they play in runni
 
 #### Resources:
 
-- What is a kubernetes Operator: https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator
-- What are Kubernetes Operators (Operators 101 :part 1) : https://sklar.rocks/what-are-kubernetes-operators/
-- Operator Pattern: https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
-- Custom Resource Definitions : https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
-- An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2) : https://sklar.rocks/kubernetes-custom-resource-definitions/
-- Operator Hub: https://operatorhub.io/
+- [What is a kubernetes Operator](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator)
+- [What are Kubernetes Operators (Operators 101 :part 1)](https://sklar.rocks/what-are-kubernetes-operators/)
+- [Operator Pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
+- [Custom Resource Definitions](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+- [An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2)](https://sklar.rocks/kubernetes-custom-resource-definitions/)
+- [Operator Hub]( https://operatorhub.io/) OR visit
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
-
 
 ### Common Tools
 
 #### Purpose
+
 Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
 
 #### Resources:
@@ -107,7 +107,7 @@ Describe all of the open source projects that are a part of the DoK Ecosystem
 
 #### Resources:
 
-- DoK Landscape: https://dok.community/landscape/
+- [DoK Landscape](https://dok.community/landscape/)
 - Kafka
 - Spark
 - Kubeflow
