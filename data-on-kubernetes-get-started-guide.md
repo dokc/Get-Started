@@ -14,19 +14,36 @@ We will break the content into sections in a logical order to guide someone from
 
 ## Table of Contents
 
-- [Intro to Stateful](#intro-to-stateful)
-- [Types of workloads](#types-of-workloads)
-- [Operators 101](#operatores-101)
-- [Common Tools](#common-tools)
-- [Ecosystem 101](#ecosystem-101)
-- [Deploy your first database on kubernetes](#deploy-you-first-database-on-kubernetes)
-- [Next Steps](#next-steps)
+- [Data on Kubernetes - Getting Started Guide](#data-on-kubernetes---getting-started-guide)
+  - [Project Description](#project-description)
+  - [Goals](#goals)
+  - [Table of Contents](#table-of-contents)
+    - [Intro to Stateful](#intro-to-stateful)
+      - [Purpose:](#purpose)
+      - [Resources](#resources)
+    - [Types of workloads](#types-of-workloads)
+      - [Purpose](#purpose-1)
+    - [Operators 101](#operators-101)
+      - [Purpose](#purpose-2)
+      - [Resources:](#resources-1)
+    - [Common Tools](#common-tools)
+      - [Purpose](#purpose-3)
+      - [Resources:](#resources-2)
+    - [Ecosystem 101](#ecosystem-101)
+      - [Purpose](#purpose-4)
+      - [Resources:](#resources-3)
+    - [Deploy your first database on kubernetes](#deploy-your-first-database-on-kubernetes)
+      - [Purpose](#purpose-5)
+      - [Resources:](#resources-4)
+    - [Next Steps](#next-steps)
+      - [Purpose](#purpose-6)
+      - [Resources:](#resources-5)
 
 ### Intro to Stateful 
 #### Purpose: 
 Provide basic knowledge of what stateful means in Kubernetes
 #### Resources
-- [Documentation on Stateful Sets from Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/){:target="_blank"} 
+- <a href="https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/" target="_blank">Documentation on Stateful Sets from Kubernetes</a>
 - [Stateful Workloads in Kubernetes: A Deep Dive - Kaslin Fields & Michelle Au, Google](https://youtu.be/688K9UlEbPk?si=BNH7a5JWMlZWtbyU){:target="_blank"} 
 
 ### Types of workloads
