@@ -64,7 +64,7 @@ Provide a list of stateful workloads that exist on Kubernetes and a description/
 Stateful Workloads
 
 - Databases (stateful sets or CRD)
-- AI/ML (usually jobs)
+- AI/ML (usually jobs) - [https://developers.redhat.com/aiml/ai-workloads](https://developers.redhat.com/aiml/ai-workloads)
 - Batch processing jobs
 - Stream processing
 - Machine learning and AI workloads
