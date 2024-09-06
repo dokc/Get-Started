@@ -37,7 +37,7 @@ We will break the content into sections in a logical order to guide someone from
   - [Purpose](#purpose-6)
   - [Resources:](#resources-5)
   
-### Why Stateful on Kubernetes
+## Why Stateful on Kubernetes
 
 According to past DoK reports, the following are some of the reasons 
 - Kubernetes has become a core part of IT – half of the respondents are running 50% or more of their production workloads • on it, and they are very satisfied and more productive as a result. The most advanced users report 2x or greater productivity gains.
@@ -45,20 +45,20 @@ According to past DoK reports, the following are some of the reasons
 -Standardization is the key driver for Kubernetes Leaders
 
 
-### Intro to Stateful
+## Intro to Stateful
 
-#### Purpose
+### Purpose
 
 Provide basic knowledge of what stateful means in Kubernetes.
 
-#### Resources
+### Resources
 
 - [Documentation on Stateful Sets from Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
 - [Stateful Workloads in Kubernetes: A Deep Dive - Kaslin Fields & Michelle Au, Google](https://youtu.be/688K9UlEbPk?si=BNH7a5JWMlZWtbyU)
 
-### Types of workloads
+## Types of workloads
 
-#### Purpose
+### Purpose
 
 Provide a list of stateful workloads that exist on Kubernetes and a description/examples of each workload
 Stateful Workloads
@@ -77,13 +77,13 @@ Stateful Workloads
 - Search and indexing engines
 
 
-### Operators 101
+## Operators 101
 
-#### Purpose
+### Purpose
 
 Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
 
-#### Resources:
+### Resources:
 
 - [What is a kubernetes Operator](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator)
 - [What are Kubernetes Operators (Operators 101 :part 1)](https://sklar.rocks/what-are-kubernetes-operators/)
@@ -93,56 +93,56 @@ Provide resources explaining what operators are and what role they play in runni
 - [Operator Hub]( https://operatorhub.io/) OR visit
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
 
-### Common Tools
+## Common Tools
 
-#### Purpose
+### Purpose
 
 Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
 
-#### Resources:
+### Resources:
 
 - MiniKube: Used for running kubernetes locally
 
-### Ecosystem 101
+## Ecosystem 101
 
-#### Purpose
+### Purpose
 
 List and describe open source projects that are a part of the DoK Ecosystem. This list is not comprehensive.
 
 - [DoK Landscape](https://dok.community/landscape/)
 
-#### Databases
+### Databases
 - Vitess - MySQL-compatible, horizontally scalable, cloud-native database solution
 - Cassandra - Apache Cassandra is a highly-scalable partitioned row store. Rows are organized into tables with a required primary key.
 - TiKV - is a highly scalable, low latency, and easy to use
 key-value database
 - PostgreSQL - PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
 
-#### Cloud Native Storage
+### Cloud Native Storage
 
 - Rook - Rook is an open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
 - CubeFS - CubeFS is a new generation cloud-native open source storage system that supports access protocols such as S3, HDFS, and POSIX.
 - Longhorn - Longhorn is a lightweight, reliable and easy-to-use distributed block storage system for Kubernetes.
 
 
-#### Streaming
+### Streaming
 - Kafka
 - Spark
 - Flink
 - Kubeflow
 - Strimzi
 
-### Deploy your first database on kubernetes
+## Deploy your first database on kubernetes
 
-#### Purpose
+### Purpose
 
 In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes.
 
-#### Resources:
+### Resources:
 
-### Next Steps
+## Next Steps
 
-#### Purpose
+### Purpose
 In this section, we'll list some resources to push you to the next level of understanding.
 
-#### Resources:
+### Resources:
