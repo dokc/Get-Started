@@ -15,7 +15,7 @@ Provide a set of resources to help guide a complete beginner with the base set o
 We will break the content into sections in a logical order to guide someone from DoK beginner to deploying their first stateful application on kubernetes.
 
 ## Table of Contents
-
+- [Why Stateful on Kubernetes?](#why-stateful-on-kubernetes)
 - [Intro to Stateful](#intro-to-stateful)
   - [Purpose](#purpose)
   - [Resources](#resources)
