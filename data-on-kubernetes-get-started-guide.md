@@ -93,6 +93,9 @@ Provide resources explaining what operators are and what role they play in runni
 - [Operator Hub]( https://operatorhub.io/) OR visit
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
 
+### Common Operators
+- [CloudNativePG](https://cloudnative-pg.io/) 
+
 ## Common Tools
 
 ### Purpose
@@ -112,11 +115,9 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
 - [DoK Landscape](https://dok.community/landscape/)
 
 ### Databases
-- Vitess - MySQL-compatible, horizontally scalable, cloud-native database solution
-- Cassandra - Apache Cassandra is a highly-scalable partitioned row store. Rows are organized into tables with a required primary key.
-- TiKV - is a highly scalable, low latency, and easy to use
-key-value database
-- PostgreSQL - PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
+- [Vitess](https://vitess.io/) - MySQL-compatible, horizontally scalable, cloud-native database solution
+- [Cassandra](https://cassandra.apache.org/_/index.html) - Apache Cassandra is a highly-scalable partitioned row store. Rows are organized into tables with a required primary key.
+- [PostgreSQL](https://www.postgresql.org/) - PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
 
 ### Cloud Native Storage
 
