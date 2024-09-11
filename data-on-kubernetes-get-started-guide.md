@@ -3,7 +3,7 @@
 Contributors: Paul Au, Ryan Wallner, Johnathon Battiato, Kallio Prinewill
 
 ## Project Proposal
-[Propoal](https://docs.google.com/document/d/1-6FSuRvWGjlvNZM0pKg6wzFD8W99Z3p2DngEYgjix2o/edit)
+[Proposal](https://docs.google.com/document/d/1-6FSuRvWGjlvNZM0pKg6wzFD8W99Z3p2DngEYgjix2o/edit)
 
 ## Project Description
 
