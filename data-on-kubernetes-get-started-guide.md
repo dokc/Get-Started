@@ -92,6 +92,7 @@ Provide resources explaining what operators are and what role they play in runni
 - [An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2)](https://sklar.rocks/kubernetes-custom-resource-definitions/)
 - [Operator Hub]( https://operatorhub.io/) OR visit
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
+- [Celebrating 10 years of Kubernetes: The evolutio of databse operators](https://www.cncf.io/blog/2024/06/28/celebrating-10-years-of-kubernetes-the-evolution-of-database-operators/)
 
 ### Common Operators
 - [CloudNativePG](https://cloudnative-pg.io/) 
@@ -128,10 +129,16 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
 
 ### Streaming
 - Kafka
+  - [Running Apache Spark on Kubernetes](https://medium.com/empathyco/running-apache-spark-on-kubernetes-2e64c73d0bb2)   
 - Spark
+  - [Run Apache Spark jobs on Amazon EKS using the OSS Spark Operator](https://awslabs.github.io/data-on-eks/docs/blueprints/data-analytics/spark-operator-yunikorn) 
 - Flink
 - Kubeflow
 - Strimzi
+
+### AI/ML
+- Ray
+  - [Managing Ray clusters for ML on Kubernetes with KubeRay](https://www.youtube.com/watch?v=1vGb0nn5n0o) 
 
 ## Deploy your first database on kubernetes
 
@@ -140,6 +147,8 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
 In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes.
 
 ### Resources:
+- [Running a Database on Kubernetes](https://medium.com/building-the-open-data-stack/how-to-put-a-database-in-kubernetes-ab7c21540ec2)
+- [How to put a Database in Kubernetes](https://www.youtube.com/watch?v=UgtYlvIv36Q)
 
 ## Next Steps
 
