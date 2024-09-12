@@ -138,6 +138,7 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
 - Flink
 - Kubeflow
 - Strimzi
+  - [Running Kafka on Kubernetes using Strimzi](https://dev.to/vinod827/harnessing-apache-kafka-on-kubernetes-with-strimzi-5fjg)
 
 ### AI/ML
 - Ray
