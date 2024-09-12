@@ -98,8 +98,9 @@ https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-exam
 - [Celebrating 10 years of Kubernetes: The evolutio of databse operators](https://www.cncf.io/blog/2024/06/28/celebrating-10-years-of-kubernetes-the-evolution-of-database-operators/)
 
 ### Common Operators
-- [CloudNativePG](https://cloudnative-pg.io/) 
-
+- [CloudNativePG](https://cloudnative-pg.io/)
+- [Vitess] ([https://vitess.io/docs/20.0/get-started/ope](https://vitess.io/docs/20.0/get-started/operator/)
+- 
 ## Common Tools
 
 ### Purpose
