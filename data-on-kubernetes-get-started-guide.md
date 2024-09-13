@@ -99,8 +99,8 @@ https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-exam
 
 ### Common Operators
 - [CloudNativePG](https://cloudnative-pg.io/)
-- [Vitess] ([https://vitess.io/docs/20.0/get-started/ope](https://vitess.io/docs/20.0/get-started/operator/)
-- 
+- <a href="https://vitess.io/docs/20.0/get-started/ope](https://vitess.io/docs/20.0/get-started/operator/" target="_blank">Vitess</a>
+
 ## Common Tools
 
 ### Purpose
