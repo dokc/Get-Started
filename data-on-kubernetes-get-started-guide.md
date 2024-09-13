@@ -20,25 +20,12 @@ We will break the content into sections in a logical order to guide someone from
 ## Table of Contents
 - [Why Stateful on Kubernetes?](#why-stateful-on-kubernetes)
 - [Intro to Stateful](#intro-to-stateful)
-  - [Purpose](#purpose)
-  - [Resources](#resources)
 - [Types of workloads](#types-of-workloads)
-  - [Purpose](#purpose-1)
 - [Operators 101](#operators-101)
-  - [Purpose](#purpose-2)
-  - [Resources:](#resources-1)
 - [Common Tools](#common-tools)
-  - [Purpose](#purpose-3)
-  - [Resources:](#resources-2)
 - [Ecosystem 101](#ecosystem-101)
-  - [Purpose](#purpose-4)
-  - [Resources:](#resources-3)
 - [Deploy your first database on kubernetes](#deploy-your-first-database-on-kubernetes)
-  - [Purpose](#purpose-5)
-  - [Resources:](#resources-4)
 - [Next Steps](#next-steps)
-  - [Purpose](#purpose-6)
-  - [Resources:](#resources-5)
   
 ## Why Stateful on Kubernetes
 
