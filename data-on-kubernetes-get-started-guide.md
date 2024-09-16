@@ -30,21 +30,23 @@ We will break the content into sections in a logical order to guide someone from
 ## Why Stateful on Kubernetes
 
 According to past DoK reports, the following are some of the reasons 
-- Kubernetes has become a core part of IT – half of the respondents are running 50% or more of their production workloads • on it, and they are very satisfied and more productive as a result. The most advanced users report 2x or greater productivity gains.
+- Kubernetes has become a core part of IT – half of the respondents are running 50% or more of their production workloads on it, and they are very satisfied and more productive as a result. The most advanced users report 2x or greater productivity gains.
 - Business demands are creating pressures for further adoption. The increasing importance of real-time data to competitive advantage will sharpen companiesʼ need to run data on Kubernetes. A majority believe standards will improve data management and that data should become declarative.
-- Standardization is the key driver for Kubernetes Leaders
+- Standardization is the key driver for Kubernetes Leaders.
 
 
 ## Intro to Stateful
 
 ### Purpose
 
-Provide basic knowledge of what stateful means in Kubernetes.
+A stateful workload, differently than a stateless workload, is an application or a process that stores any sort of information in a persistent way.
+Kubernetes supports data persistency for this type of workloads thanks to the API which abstractd the attached storage. The API provides the **PersistentVolume** and **PersistentVolumeClaim** Kubernetes resources in order to allow users to consume abstract storage resources on either Pods or StatefulSets that require to persist their data.
 
 ### Resources
 
 - [Documentation on Stateful Sets from Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
 - [Stateful Workloads in Kubernetes: A Deep Dive - Kaslin Fields & Michelle Au, Google](https://youtu.be/688K9UlEbPk?si=BNH7a5JWMlZWtbyU)
+- [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
 
 ## Types of workloads
 
