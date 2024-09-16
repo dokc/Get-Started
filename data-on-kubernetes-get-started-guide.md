@@ -1,6 +1,6 @@
 # Data on Kubernetes - Getting Started Guide
 
-Contributors: Paul Au, Ryan Wallner, Johnathon Battiato, Kallio Prinewill
+Contributors: Paul Au, Ryan Wallner, Jonathan Battiato, Kallio Prinewill
 
 ## Project Proposal
 [Proposal](https://docs.google.com/document/d/1-6FSuRvWGjlvNZM0pKg6wzFD8W99Z3p2DngEYgjix2o/edit)
@@ -31,8 +31,8 @@ We will break the content into sections in a logical order to guide someone from
 
 According to past DoK reports, the following are some of the reasons 
 - Kubernetes has become a core part of IT – half of the respondents are running 50% or more of their production workloads • on it, and they are very satisfied and more productive as a result. The most advanced users report 2x or greater productivity gains.
--Business demands are creating pressures for further adoption. The increasing importance of real-time data to competitive advantage will sharpen companiesʼ need to run data on Kubernetes. A majority believe standards will improve data management and that data should become declarative.
--Standardization is the key driver for Kubernetes Leaders
+- Business demands are creating pressures for further adoption. The increasing importance of real-time data to competitive advantage will sharpen companiesʼ need to run data on Kubernetes. A majority believe standards will improve data management and that data should become declarative.
+- Standardization is the key driver for Kubernetes Leaders
 
 
 ## Intro to Stateful
