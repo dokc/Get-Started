@@ -22,14 +22,14 @@ We will break the content into sections in a logical order to guide someone from
 - [Deploy your first database on kubernetes](#deploy-you-first-database-on-kubernetes)
 - [Next Steps](#next-steps)
 
-### Intro to Stateful 
+# Intro to Stateful 
 #### Purpose: 
 Provide basic knowledge of what stateful means in Kubernetes
 #### Resources
 - [Documentation on Stateful Sets from Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/){:target="_blank"} 
 - [Stateful Workloads in Kubernetes: A Deep Dive - Kaslin Fields & Michelle Au, Google](https://youtu.be/688K9UlEbPk?si=BNH7a5JWMlZWtbyU){:target="_blank"} 
 
-### Types of workloads
+# Types of workloads
 
 #### Purpose
 Provide a list of stateful workloads that exist on Kubernetes and a description/examples of each workload
@@ -49,7 +49,7 @@ Stateful Workloads
 - Search and indexing engines
 
 
-### Operators 101
+# Operators 101
 
 "The goal of an Operator is to put operational knowledge into software" - https://operatorhub.io/what-is-an-operator
 
@@ -68,14 +68,14 @@ Provide resources explaining what operators are and what role they play in runni
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
 
 
-### Common Tools
+# Common Tools
 #### Purpose
 Provide resources explaining what common tools exist in the ecosystem what role they play in data workloads on kubernetes.
 
 #### Resources:
 - MiniKube: Used for running kubernetes locally
 
-### Ecosystem 101
+# Ecosystem 101
 #### Purpose
 Describe all of the open source projects that are a part of the DoK Ecosystem
 
@@ -85,13 +85,109 @@ Describe all of the open source projects that are a part of the DoK Ecosystem
 - Spark
 - Kubeflow
 
-### Deploy your first database on kubernetes
+# Deploy your first database on kubernetes
 #### Purpose
-In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes
+In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes. 
+
+## Deploy MySQL using Killercoda Playground
+
+1. Launch the Killercoda Kubernetes Lab Environment from your web browser
+
+[Click here to access the environment](https://killercoda.com/playgrounds/scenario/kubernetes)
+
+2. Launch a MySQL Instance
+
+```
+kubectl apply -f https://k8s.io/examples/application/mysql/mysql-pv.yaml
+kubectl apply -f https://k8s.io/examples/application/mysql/mysql-deployment.yaml
+```
+
+![deploy mysql](assets/deploy-mysql.png)
+
+3. View your MySQL Instance Running
+
+```
+kubectl get pvc, po
+```
+![view mysql](assets/view-mysql.png)
+
+4. Attach to MySQL
+
+When prompted for the MySQL password, it is `password`
+```
+kubectl exec -i -t $(kubectl get pod -l app=mysql -o name) -- bash
+mysql -u root -p
+```
+
+![attach mysql](assets/attach-mysql.png)
+
+When you would liked to exit from the pod, type `exit` twice.
+
+You've succesfully deployed your first Stateful Database (MySQL) on Kubernetes with a persistent volume.
+
+## Run using Docker Desktop
+1. Install [Docker Desktop](https://docs.docker.com/desktop/)
+
+2. Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+
+![enable k8s](assets/enable-k8s.png)
+
+3. Set your context using `kubectl`
+
+```
+kubectl config get-contexts
+kubectl config use-context docker-desktop
+```
+
+4. Run a MongoDB StatefulSet
+
+You can copy the [example MongoDB YAML](assets/mongo.yaml) and save it locally to `mongo.yaml`.
+```
+kubectl apply -f mongo.yaml
+```
+
+5. View your Mongo database
+```
+kubectl get pvc, po
+```
+
+It should look something like this
+```
+kubectl get pvc,po              
+NAME                                           STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/mongodb-data-mongodb-0   Bound    pvc-272ffc2a-2936-4609-a7b7-0cd20a8135af   1Gi        RWO            hostpath       <unset>                 77s
+persistentvolumeclaim/mongodb-pvc              Bound    pvc-4b6071be-5425-473e-a214-07d9b8db0213   1Gi        RWO            hostpath       <unset>                 77s
+
+NAME            READY   STATUS    RESTARTS   AGE
+pod/mongodb-0   1/1     Running   0          77s
+```
+
+6. Attach to your Mongo Database
+
+```
+kubectl exec -it pod/mongodb-0 -- bash
+mongosh
+```
+
+You can then `shows dbs` and `use myNewDB` to test out the Mongo Database
+```
+test> show dbs
+test> use myNewDB
+switched to db myNewDB
+myNewDB>
+```
+
+When you would liked to exit from the pod, type `exit` twice.
+
+You've succesfully deployed your first StatefulSet Database (MongoDB) on Kubernetes with a persistent volume.
 
 #### Resources:
+- [K8s Run Single Instance Stateful App](https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/)
+- [K8s on Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+- [Deploy MongoDB](https://medium.com/@ravipatel.it/deploying-mongodb-on-kubernetes-minikube-2c4f19a151f7)
+- [Killercoda K8s Environment](https://killercoda.com/playgrounds/scenario/kubernetes)
 
-### Next Steps
+# Next Steps
 
 Now that you hopefully have gained an understanding of how to get started with Data on Kubernetes. It's time to think about next steps.
 
