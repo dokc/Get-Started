@@ -50,6 +50,11 @@ Stateful Workloads
 
 
 ### Operators 101
+
+"The goal of an Operator is to put operational knowledge into software" - https://operatorhub.io/what-is-an-operator
+
+Operators takes knowledge of how to implement, deploy, run, maintain and protect software applications on Kubernetes and puts it into a repeatable framework for automation. The framework and automation in turn provide Day 1 Operations (installation, configuration, etc.) and Day 2 Operations (re-configuration, update, backup, failover, restore, etc.) for applications. You can read more about the framework at the [operatorframework.io](https://operatorframework.io/)
+
 #### Purpose
 Provide resources explaining what operators are and what role they play in running data workloads on kubernetes
 
@@ -59,7 +64,7 @@ Provide resources explaining what operators are and what role they play in runni
 - Operator Pattern: https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
 - Custom Resource Definitions : https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
 - An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2) : https://sklar.rocks/kubernetes-custom-resource-definitions/
-- Operator Hub: https://operatorhub.io/
+- Operator Hub (A place to share a find community Operators): https://operatorhub.io/
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
 
 
