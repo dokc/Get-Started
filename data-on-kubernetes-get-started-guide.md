@@ -70,7 +70,7 @@ https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-exam
 
 ### Common Tools
 #### Purpose
-Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
+Provide resources explaining what common tools exist in the ecosystem what role they play in data workloads on kubernetes.
 
 #### Resources:
 - MiniKube: Used for running kubernetes locally
@@ -81,7 +81,7 @@ Describe all of the open source projects that are a part of the DoK Ecosystem
 
 #### Resources:
 - DoK Landscape: https://dok.community/landscape/
-= Kafka
+- Kafka
 - Spark
 - Kubeflow
 
@@ -92,7 +92,22 @@ In this section, you'll learn how to use the knowledge you've accumulated to dep
 #### Resources:
 
 ### Next Steps
+
+Now that you hopefully have gained an understanding of how to get started with Data on Kubernetes. It's time to think about next steps.
+
+Next steps might be thinking beyond how to get started and tackeling some of the following topics.
+- High Availability
+- Multi-Cluster / Multi-Cloud
+- Backup and Recovery
+- Disaster Recovery
+- Snapshots and Data Replication
+- Encryption
+- Running and managing multiple types of data services
+- Performance
+
 #### Purpose
 In this section, we'll list some resources to push you to the next level of understanding.
 
 #### Resources:
+- [Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/)
+- [Open-source Backup Solution Velero](https://velero.io/)
