@@ -1,55 +1,73 @@
 # Data on Kubernetes - Getting Started Guide
 
-Contributors: Paul Au, 
+Contributors: Paul Au, Ryan Wallner, Johnathon Battiato, Kallio Prinewill
+
+## Project Proposal
+[Proposal](https://docs.google.com/document/d/1-6FSuRvWGjlvNZM0pKg6wzFD8W99Z3p2DngEYgjix2o/edit)
 
 ## Project Description
-The barrier to entry for any technology and community surrounding that technology can often be quite high. The purpose of this document is to capture existing resources that we can leverage to help create a roadmap for DoK beginners. 
+
+The barrier to entry for any technology and community surrounding that technology can often be quite high. The purpose of this document is to capture existing resources that we can leverage to help create a roadmap for DoK beginners.
 
 The secondary purpose of this document is to capture gaps in existing content so we can, as a community, create content to fill those gaps.
 
 ## Goals
+
 Provide a set of resources to help guide a complete beginner with the base set of knowledge to start running data workloads on Kubernetes.
 
 We will break the content into sections in a logical order to guide someone from DoK beginner to deploying their first stateful application on kubernetes.
 
 ## Table of Contents
-
+- [Why Stateful on Kubernetes?](#why-stateful-on-kubernetes)
 - [Intro to Stateful](#intro-to-stateful)
 - [Types of workloads](#types-of-workloads)
-- [Operators 101](#operatores-101)
+- [Operators 101](#operators-101)
 - [Common Tools](#common-tools)
 - [Ecosystem 101](#ecosystem-101)
-- [Deploy your first database on kubernetes](#deploy-you-first-database-on-kubernetes)
+- [Deploy your first database on kubernetes](#deploy-your-first-database-on-kubernetes)
 - [Next Steps](#next-steps)
+  
+## Why Stateful on Kubernetes
 
-# Intro to Stateful 
-#### Purpose: 
-Provide basic knowledge of what stateful means in Kubernetes
-#### Resources
-- [Documentation on Stateful Sets from Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/){:target="_blank"} 
-- [Stateful Workloads in Kubernetes: A Deep Dive - Kaslin Fields & Michelle Au, Google](https://youtu.be/688K9UlEbPk?si=BNH7a5JWMlZWtbyU){:target="_blank"} 
+According to past DoK reports, the following are some of the reasons 
+- Kubernetes has become a core part of IT – half of the respondents are running 50% or more of their production workloads • on it, and they are very satisfied and more productive as a result. The most advanced users report 2x or greater productivity gains.
+-Business demands are creating pressures for further adoption. The increasing importance of real-time data to competitive advantage will sharpen companiesʼ need to run data on Kubernetes. A majority believe standards will improve data management and that data should become declarative.
+-Standardization is the key driver for Kubernetes Leaders
 
-# Types of workloads
 
-#### Purpose
+## Intro to Stateful
+
+### Purpose
+
+Provide basic knowledge of what stateful means in Kubernetes.
+
+### Resources
+
+- [Documentation on Stateful Sets from Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
+- [Stateful Workloads in Kubernetes: A Deep Dive - Kaslin Fields & Michelle Au, Google](https://youtu.be/688K9UlEbPk?si=BNH7a5JWMlZWtbyU)
+
+## Types of workloads
+
+### Purpose
+
 Provide a list of stateful workloads that exist on Kubernetes and a description/examples of each workload
 Stateful Workloads
 
 - Databases (stateful sets or CRD)
-- AI/ML (usually jobs)
+- AI/ML (usually jobs) - [https://developers.redhat.com/aiml/ai-workloads](https://developers.redhat.com/aiml/ai-workloads)
 - Batch processing jobs
 - Stream processing
 - Machine learning and AI workloads
 - Data analytics
 - ETL (Extract, Transform, Load) pipelines
-- Data warehousing						
+- Data warehousing
 - Distributed databases
 - In-memory data grids
 - Time series databases
 - Search and indexing engines
 
 
-# Operators 101
+## Operators 101
 
 "The goal of an Operator is to put operational knowledge into software" - https://operatorhub.io/what-is-an-operator
 
@@ -68,34 +86,79 @@ Provide resources explaining what operators are and what role they play in runni
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
 
 
-# Common Tools
+## Common Tools
 #### Purpose
 Provide resources explaining what common tools exist in the ecosystem what role they play in data workloads on kubernetes.
 
-#### Resources:
+### Resources:
+
+- [What is a kubernetes Operator](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator)
+- [What are Kubernetes Operators (Operators 101 :part 1)](https://sklar.rocks/what-are-kubernetes-operators/)
+- [Operator Pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
+- [Custom Resource Definitions](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+- [An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2)](https://sklar.rocks/kubernetes-custom-resource-definitions/)
+- [Operator Hub]( https://operatorhub.io/) OR visit
+https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
+- [Celebrating 10 years of Kubernetes: The evolutio of databse operators](https://www.cncf.io/blog/2024/06/28/celebrating-10-years-of-kubernetes-the-evolution-of-database-operators/)
+
+### Common Operators
+- [CloudNativePG](https://cloudnative-pg.io/)
+- [Vitess](https://vitess.io/docs/20.0/get-started/ope](https://vitess.io/docs/20.0/get-started/operator/)
+## Common Tools
+
+### Purpose
+
+Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
+
+### Resources:
+
 - MiniKube: Used for running kubernetes locally
 
-# Ecosystem 101
-#### Purpose
-Describe all of the open source projects that are a part of the DoK Ecosystem
+## Ecosystem 101
 
-#### Resources:
-- DoK Landscape: https://dok.community/landscape/
+### Purpose
+
+List and describe open source projects that are a part of the DoK Ecosystem. This list is not comprehensive.
+
+- [DoK Landscape](https://dok.community/landscape/)
+
+### Databases
+- [Vitess](https://vitess.io/) - MySQL-compatible, horizontally scalable, cloud-native database solution
+- [Cassandra](https://cassandra.apache.org/_/index.html) - Apache Cassandra is a highly-scalable partitioned row store. Rows are organized into tables with a required primary key.
+- [PostgreSQL](https://www.postgresql.org/) - PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
+
+### Cloud Native Storage
+
+- Rook - Rook is an open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
+- CubeFS - CubeFS is a new generation cloud-native open source storage system that supports access protocols such as S3, HDFS, and POSIX.
+- Longhorn - Longhorn is a lightweight, reliable and easy-to-use distributed block storage system for Kubernetes.
+
+
+### Streaming
 - Kafka
+  - [Running Apache Spark on Kubernetes](https://medium.com/empathyco/running-apache-spark-on-kubernetes-2e64c73d0bb2)   
 - Spark
+  - [Run Apache Spark jobs on Amazon EKS using the OSS Spark Operator](https://awslabs.github.io/data-on-eks/docs/blueprints/data-analytics/spark-operator-yunikorn) 
+- Flink
 - Kubeflow
+- Strimzi
+  - [Running Kafka on Kubernetes using Strimzi](https://dev.to/vinod827/harnessing-apache-kafka-on-kubernetes-with-strimzi-5fjg)
 
-# Deploy your first database on kubernetes
+### AI/ML
+- Ray
+  - [Managing Ray clusters for ML on Kubernetes with KubeRay](https://www.youtube.com/watch?v=1vGb0nn5n0o) 
+
+## Deploy your first database on kubernetes
 #### Purpose
 In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes. 
 
-## Deploy MySQL using Killercoda Playground
+### **Deploy MySQL using Killercoda Playground**
 
-1. Launch the Killercoda Kubernetes Lab Environment from your web browser
+**Step 1:** Launch the Killercoda Kubernetes Lab Environment from your web browser
 
 [Click here to access the environment](https://killercoda.com/playgrounds/scenario/kubernetes)
 
-2. Launch a MySQL Instance
+**Step 2:**  Launch a MySQL Instance
 
 ```
 kubectl apply -f https://k8s.io/examples/application/mysql/mysql-pv.yaml
@@ -104,14 +167,14 @@ kubectl apply -f https://k8s.io/examples/application/mysql/mysql-deployment.yaml
 
 ![deploy mysql](assets/deploy-mysql.png)
 
-3. View your MySQL Instance Running
+**Step 3:**  View your MySQL Instance Running
 
 ```
 kubectl get pvc, po
 ```
 ![view mysql](assets/view-mysql.png)
 
-4. Attach to MySQL
+**Step 4:**  Attach to MySQL
 
 When prompted for the MySQL password, it is `password`
 ```
@@ -125,28 +188,29 @@ When you would liked to exit from the pod, type `exit` twice.
 
 You've succesfully deployed your first Stateful Database (MySQL) on Kubernetes with a persistent volume.
 
-## Run using Docker Desktop
-1. Install [Docker Desktop](https://docs.docker.com/desktop/)
+### **Run MongoDB using Docker Desktop**
 
-2. Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+**Step 1:**  Install [Docker Desktop](https://docs.docker.com/desktop/)
+
+**Step 2:**  Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
 
 ![enable k8s](assets/enable-k8s.png)
 
-3. Set your context using `kubectl`
+**Step 3:**  Set your context using `kubectl`
 
 ```
 kubectl config get-contexts
 kubectl config use-context docker-desktop
 ```
 
-4. Run a MongoDB StatefulSet
+**Step 4:**  Run a MongoDB StatefulSet
 
 You can copy the [example MongoDB YAML](assets/mongo.yaml) and save it locally to `mongo.yaml`.
 ```
 kubectl apply -f mongo.yaml
 ```
 
-5. View your Mongo database
+**Step 5:**  View your Mongo database
 ```
 kubectl get pvc, po
 ```
@@ -162,7 +226,7 @@ NAME            READY   STATUS    RESTARTS   AGE
 pod/mongodb-0   1/1     Running   0          77s
 ```
 
-6. Attach to your Mongo Database
+**Step 6:**  Attach to your Mongo Database
 
 ```
 kubectl exec -it pod/mongodb-0 -- bash
@@ -187,7 +251,7 @@ You've succesfully deployed your first StatefulSet Database (MongoDB) on Kuberne
 - [Deploy MongoDB](https://medium.com/@ravipatel.it/deploying-mongodb-on-kubernetes-minikube-2c4f19a151f7)
 - [Killercoda K8s Environment](https://killercoda.com/playgrounds/scenario/kubernetes)
 
-# Next Steps
+## Next Steps
 
 Now that you hopefully have gained an understanding of how to get started with Data on Kubernetes. It's time to think about next steps.
 
