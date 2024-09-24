@@ -71,9 +71,26 @@ Stateful Workloads
 
 ## Operators 101
 
-### Purpose
+"The goal of an Operator is to put operational knowledge into software" - https://operatorhub.io/what-is-an-operator
 
-Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
+Operators takes knowledge of how to implement, deploy, run, maintain and protect software applications on Kubernetes and puts it into a repeatable framework for automation. The framework and automation in turn provide Day 1 Operations (installation, configuration, etc.) and Day 2 Operations (re-configuration, update, backup, failover, restore, etc.) for applications. You can read more about the framework at the [operatorframework.io](https://operatorframework.io/)
+
+#### Purpose
+Provide resources explaining what operators are and what role they play in running data workloads on kubernetes
+
+#### Resources:
+- What is a kubernetes Operator: https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator
+- What are Kubernetes Operators (Operators 101 :part 1) : https://sklar.rocks/what-are-kubernetes-operators/
+- Operator Pattern: https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+- Custom Resource Definitions : https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
+- An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2) : https://sklar.rocks/kubernetes-custom-resource-definitions/
+- Operator Hub (A place to share a find community Operators): https://operatorhub.io/
+https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
+
+
+## Common Tools
+#### Purpose
+Provide resources explaining what common tools exist in the ecosystem what role they play in data workloads on kubernetes.
 
 ### Resources:
 
@@ -134,18 +151,125 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
   - [Managing Ray clusters for ML on Kubernetes with KubeRay](https://www.youtube.com/watch?v=1vGb0nn5n0o) 
 
 ## Deploy your first database on kubernetes
+#### Purpose
+In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes. 
 
-### Purpose
+### **Deploy MySQL using Killercoda Playground**
 
-In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes.
+**Step 1:** Launch the Killercoda Kubernetes Lab Environment from your web browser
 
-### Resources:
-- [Running a Database on Kubernetes](https://medium.com/building-the-open-data-stack/how-to-put-a-database-in-kubernetes-ab7c21540ec2)
-- [How to put a Database in Kubernetes](https://www.youtube.com/watch?v=UgtYlvIv36Q)
+[Click here to access the environment](https://killercoda.com/playgrounds/scenario/kubernetes)
+
+**Step 2:**  Launch a MySQL Instance
+
+```
+kubectl apply -f https://k8s.io/examples/application/mysql/mysql-pv.yaml
+kubectl apply -f https://k8s.io/examples/application/mysql/mysql-deployment.yaml
+```
+
+![deploy mysql](assets/deploy-mysql.png)
+
+**Step 3:**  View your MySQL Instance Running
+
+```
+kubectl get pvc, po
+```
+![view mysql](assets/view-mysql.png)
+
+**Step 4:**  Attach to MySQL
+
+When prompted for the MySQL password, it is `password`
+```
+kubectl exec -i -t $(kubectl get pod -l app=mysql -o name) -- bash
+mysql -u root -p
+```
+
+![attach mysql](assets/attach-mysql.png)
+
+When you would liked to exit from the pod, type `exit` twice.
+
+You've succesfully deployed your first Stateful Database (MySQL) on Kubernetes with a persistent volume.
+
+### **Run MongoDB using Docker Desktop**
+
+**Step 1:**  Install [Docker Desktop](https://docs.docker.com/desktop/)
+
+**Step 2:**  Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+
+![enable k8s](assets/enable-k8s.png)
+
+**Step 3:**  Set your context using `kubectl`
+
+```
+kubectl config get-contexts
+kubectl config use-context docker-desktop
+```
+
+**Step 4:**  Run a MongoDB StatefulSet
+
+You can copy the [example MongoDB YAML](assets/mongo.yaml) and save it locally to `mongo.yaml`.
+```
+kubectl apply -f mongo.yaml
+```
+
+**Step 5:**  View your Mongo database
+```
+kubectl get pvc, po
+```
+
+It should look something like this
+```
+kubectl get pvc,po              
+NAME                                           STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/mongodb-data-mongodb-0   Bound    pvc-272ffc2a-2936-4609-a7b7-0cd20a8135af   1Gi        RWO            hostpath       <unset>                 77s
+persistentvolumeclaim/mongodb-pvc              Bound    pvc-4b6071be-5425-473e-a214-07d9b8db0213   1Gi        RWO            hostpath       <unset>                 77s
+
+NAME            READY   STATUS    RESTARTS   AGE
+pod/mongodb-0   1/1     Running   0          77s
+```
+
+**Step 6:**  Attach to your Mongo Database
+
+```
+kubectl exec -it pod/mongodb-0 -- bash
+mongosh
+```
+
+You can then `shows dbs` and `use myNewDB` to test out the Mongo Database
+```
+test> show dbs
+test> use myNewDB
+switched to db myNewDB
+myNewDB>
+```
+
+When you would liked to exit from the pod, type `exit` twice.
+
+You've succesfully deployed your first StatefulSet Database (MongoDB) on Kubernetes with a persistent volume.
+
+#### Resources:
+- [K8s Run Single Instance Stateful App](https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/)
+- [K8s on Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+- [Deploy MongoDB](https://medium.com/@ravipatel.it/deploying-mongodb-on-kubernetes-minikube-2c4f19a151f7)
+- [Killercoda K8s Environment](https://killercoda.com/playgrounds/scenario/kubernetes)
 
 ## Next Steps
 
-### Purpose
+Now that you hopefully have gained an understanding of how to get started with Data on Kubernetes. It's time to think about next steps.
+
+Next steps might be thinking beyond how to get started and tackeling some of the following topics.
+- High Availability
+- Multi-Cluster / Multi-Cloud
+- Backup and Recovery
+- Disaster Recovery
+- Snapshots and Data Replication
+- Encryption
+- Running and managing multiple types of data services
+- Performance
+
+#### Purpose
 In this section, we'll list some resources to push you to the next level of understanding.
 
-### Resources:
+#### Resources:
+- [Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/)
+- [Open-source Backup Solution Velero](https://velero.io/)
