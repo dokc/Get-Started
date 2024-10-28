@@ -22,7 +22,6 @@ We will break the content into sections in a logical order to guide someone from
 - [Intro to Stateful](#intro-to-stateful)
 - [Types of workloads](#types-of-workloads)
 - [Operators 101](#operators-101)
-- [Common Tools](#common-tools)
 - [Ecosystem 101](#ecosystem-101)
 - [Deploy your first database on kubernetes](#deploy-your-first-database-on-kubernetes)
 - [Next Steps](#next-steps)
