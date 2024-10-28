@@ -257,7 +257,7 @@ This is a community driven resource and we welcome contributions from the Data o
 
 ## What's missing?
 
-Are there topics you would like us to cover that you don't see above? Let us know! Fill of this form and let us know what you would like us to cover.
+Are there topics you would like us to cover that you don't see above? Let us know! Fill out the form and let us know what you would like us to cover.
 
 [Submit a request](https://forms.gle/PxuYw2BLkCsKHqFS8)
 
