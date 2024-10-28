@@ -79,21 +79,6 @@ Operators takes knowledge of how to implement, deploy, run, maintain and protect
 Provide resources explaining what operators are and what role they play in running data workloads on kubernetes
 
 #### Resources:
-- What is a kubernetes Operator: https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator
-- What are Kubernetes Operators (Operators 101 :part 1) : https://sklar.rocks/what-are-kubernetes-operators/
-- Operator Pattern: https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
-- Custom Resource Definitions : https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
-- An Introduction to Custom Resource Definitions and Custom Resources (Operators 101: Part 2) : https://sklar.rocks/kubernetes-custom-resource-definitions/
-- Operator Hub (A place to share a find community Operators): https://operatorhub.io/
-https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
-
-
-## Common Tools
-#### Purpose
-Provide resources explaining what common tools exist in the ecosystem what role they play in data workloads on kubernetes.
-
-### Resources:
-
 - [What is a kubernetes Operator](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator)
 - [What are Kubernetes Operators (Operators 101 :part 1)](https://sklar.rocks/what-are-kubernetes-operators/)
 - [Operator Pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
@@ -103,18 +88,6 @@ Provide resources explaining what common tools exist in the ecosystem what role 
 https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/
 - [Celebrating 10 years of Kubernetes: The evolutio of databse operators](https://www.cncf.io/blog/2024/06/28/celebrating-10-years-of-kubernetes-the-evolution-of-database-operators/)
 
-### Common Operators
-- [CloudNativePG](https://cloudnative-pg.io/)
-- [Vitess](https://vitess.io/docs/20.0/get-started/ope](https://vitess.io/docs/20.0/get-started/operator/)
-## Common Tools
-
-### Purpose
-
-Provide resources explaining what operators are and what role they play in running data workloads on kubernetes.
-
-### Resources:
-
-- MiniKube: Used for running kubernetes locally
 
 ## Ecosystem 101
 
@@ -131,24 +104,27 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
 
 ### Cloud Native Storage
 
-- Rook - Rook is an open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
-- CubeFS - CubeFS is a new generation cloud-native open source storage system that supports access protocols such as S3, HDFS, and POSIX.
-- Longhorn - Longhorn is a lightweight, reliable and easy-to-use distributed block storage system for Kubernetes.
+- Rook: Rook is an open source cloud-native storage orchestrator, providing the platform, framework, and support for Ceph storage to natively integrate with cloud-native environments.
+- CubeFS: CubeFS is a new generation cloud-native open source storage system that supports access protocols such as S3, HDFS, and POSIX.
+- Longhorn: Longhorn is a lightweight, reliable and easy-to-use distributed block storage system for Kubernetes.
 
 
 ### Streaming
-- Kafka
+- Kafka:  Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. 
   - [Running Apache Spark on Kubernetes](https://medium.com/empathyco/running-apache-spark-on-kubernetes-2e64c73d0bb2)   
-- Spark
+- Spark: Apache Spark™ is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters. 
   - [Run Apache Spark jobs on Amazon EKS using the OSS Spark Operator](https://awslabs.github.io/data-on-eks/docs/blueprints/data-analytics/spark-operator-yunikorn) 
-- Flink
-- Kubeflow
-- Strimzi
+- Flink: Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.
+- [Strimzi](https://strimzi.io/): Strimzi provides a way to run an Apache Kafka cluster on Kubernetes in various deployment configurations.
   - [Running Kafka on Kubernetes using Strimzi](https://dev.to/vinod827/harnessing-apache-kafka-on-kubernetes-with-strimzi-5fjg)
 
 ### AI/ML
-- Ray
-  - [Managing Ray clusters for ML on Kubernetes with KubeRay](https://www.youtube.com/watch?v=1vGb0nn5n0o) 
+- [Ray](https://www.ray.io/): Ray manages, executes, and optimizes compute needs across AI workloads. It unifies infrastructure via a single, flexible framework—enabling any AI workload from data processing to model training to model serving and beyond.
+  - [Managing Ray clusters for ML on Kubernetes with KubeRay](https://www.youtube.com/watch?v=1vGb0nn5n0o)
+- [Kubeflow](https://www.kubeflow.org/): Kubeflow makes artificial intelligence and machine learning simple, portable, and scalable. We are an ecosystem of Kubernetes based components for each stage in the AI/ML Lifecycle with support for best-in-class open source tools and frameworks.
+
+### Batch Processing
+- [Apache YuniKorn](https://yunikorn.apache.org/): light-weight, universal resource scheduler for container orchestrator systems.
 
 ## Deploy your first database on kubernetes
 #### Purpose
