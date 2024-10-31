@@ -97,9 +97,10 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
 - [DoK Landscape](https://dok.community/landscape/)
 
 ### Databases
-- [Vitess](https://vitess.io/) - MySQL-compatible, horizontally scalable, cloud-native database solution
-- [Cassandra](https://cassandra.apache.org/_/index.html) - Apache Cassandra is a highly-scalable partitioned row store. Rows are organized into tables with a required primary key.
-- [PostgreSQL](https://www.postgresql.org/) - PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
+- [Vitess](https://vitess.io/): MySQL-compatible, horizontally scalable, cloud-native database solution
+- [Cassandra](https://cassandra.apache.org/_/index.html): Apache Cassandra is a highly-scalable partitioned row store. Rows are organized into tables with a required primary key.
+- [PostgreSQL](https://www.postgresql.org/): PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
+- [MySql](https://www.mysql.com/): An open-source relational database management system.
 
 ### Cloud Native Storage
 
@@ -115,9 +116,10 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
   - [Running Apache Spark on Kubernetes](https://medium.com/empathyco/running-apache-spark-on-kubernetes-2e64c73d0bb2)   
 - [Spark](https://spark.apache.org/): Apache Spark™ is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters. 
   - [Run Apache Spark jobs on Amazon EKS using the OSS Spark Operator](https://awslabs.github.io/data-on-eks/docs/blueprints/data-analytics/spark-operator-yunikorn) 
-- Flink: Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.
+- [Flink](https://flink.apache.org/): Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.
 - [Strimzi](https://strimzi.io/): Strimzi provides a way to run an Apache Kafka cluster on Kubernetes in various deployment configurations.
   - [Running Kafka on Kubernetes using Strimzi](https://dev.to/vinod827/harnessing-apache-kafka-on-kubernetes-with-strimzi-5fjg)
+- [Apache Pulsar](https://pulsar.apache.org/): Apache Pulsar is an open-source, distributed messaging and streaming platform built for the cloud. 
 
 ### AI/ML
 - [Ray](https://www.ray.io/): Ray manages, executes, and optimizes compute needs across AI workloads. It unifies infrastructure via a single, flexible framework—enabling any AI workload from data processing to model training to model serving and beyond.
@@ -255,11 +257,11 @@ In this section, we'll list some resources to push you to the next level of unde
 
 This is a community driven resource and we welcome contributions from the Data on Kubernetes Community. If you would like to contribute to this resource, feel free to submit a pull request.
 
-## What's missing?
+## Feedback
 
-Are there topics you would like us to cover that you don't see above? Let us know! Fill out the form and let us know what you would like us to cover.
+We want your feedback! Let us know what you like and what you think is missing.  Are there topics you would like us to add?
 
-[Submit a request](https://forms.gle/PxuYw2BLkCsKHqFS8)
+[Submit Feedback](https://forms.gle/PxuYw2BLkCsKHqFS8)
 
 
 
