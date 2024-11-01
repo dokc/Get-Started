@@ -1,6 +1,6 @@
 # Data on Kubernetes - Getting Started Guide
 
-Contributors: Paul Au, Ryan Wallner, Jonathan Battiato, Kallio Prinewill
+Contributors: Paul Au, Jonathan Battiato, Alex Lines, Kallio Prinewill, Edith Puclla, Steve Sklar, Ryan Wallner, Gabriele Bartolini
 
 ## Project Proposal
 [Proposal](https://docs.google.com/document/d/1-6FSuRvWGjlvNZM0pKg6wzFD8W99Z3p2DngEYgjix2o/edit)
