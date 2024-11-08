@@ -1,21 +1,13 @@
 # Data on Kubernetes - Getting Started Guide
 
-Contributors: Paul Au, Jonathan Battiato, Vindod Kumar, Alex Lines, Kallio Prinewill, Edith Puclla, Steve Sklar, Ryan Wallner, Gabriele Bartolini
+Contributors: Paul Au, Jonathan Battiato, Vindod Kumar, Alex Lines, Kallio Prinewill, Edith Puclla, Steve Sklar, Ryan Wallner, Gabriele Bartolini, Alastair Turner
 
-## Project Proposal
-[Proposal](https://docs.google.com/document/d/1-6FSuRvWGjlvNZM0pKg6wzFD8W99Z3p2DngEYgjix2o/edit)
+## About this Guide
 
-## Project Description
+Learning a new technology, and finding the community resources to help you learn that technology, can be quite a task. In this guide we have curated links to existing information which can help a Data on Kubernetes beginner get started. The guide is broken into sections providing theoretical and practical information to get a first stateful application on deployed kubernetes.
 
-The barrier to entry for any technology and community surrounding that technology can often be quite high. The purpose of this document is to capture existing resources that we can leverage to help create a roadmap for DoK beginners.
+For more expert memebers of the community, this guide is also intended to capture gaps in existing content so we can, as a community, fill those gaps.
 
-The secondary purpose of this document is to capture gaps in existing content so we can, as a community, create content to fill those gaps.
-
-## Goals
-
-Provide a set of resources to help guide a complete beginner with the base set of knowledge to start running data workloads on Kubernetes.
-
-We will break the content into sections in a logical order to guide someone from DoK beginner to deploying their first stateful application on kubernetes.
 
 ## Table of Contents
 - [Why Stateful on Kubernetes?](#why-stateful-on-kubernetes)
@@ -255,7 +247,7 @@ In this section, we'll list some resources to push you to the next level of unde
 
 ## Do you want to contribute?
 
-This is a community driven resource and we welcome contributions from the Data on Kubernetes Community. If you would like to contribute to this resource, feel free to submit a pull request.
+This is a community driven resource and we welcome contributions from the Data on Kubernetes Community. If you would like to contribute to this resource, feel free to submit a pull request. For some more detail on what this repository is trying to achieve, please see [the project proposal](https://docs.google.com/document/d/1-6FSuRvWGjlvNZM0pKg6wzFD8W99Z3p2DngEYgjix2o/edit).
 
 ## Feedback
 
