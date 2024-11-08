@@ -18,7 +18,7 @@ Provide a set of resources to help guide a complete beginner with the base set o
 We will break the content into sections in a logical order to guide someone from DoK beginner to deploying their first stateful application on kubernetes.
 
 ## Table of Contents
-- [Why Stateful on Kubernetes?](#why-stateful-on-kubernetes)
+- [Why Stateful Applications on Kubernetes?](#why-stateful-on-kubernetes)
 - [Intro to Stateful](#intro-to-stateful)
 - [Types of workloads](#types-of-workloads)
 - [Operators 101](#operators-101)
@@ -26,13 +26,13 @@ We will break the content into sections in a logical order to guide someone from
 - [Deploy your first database on kubernetes](#deploy-your-first-database-on-kubernetes)
 - [Next Steps](#next-steps)
   
-## Why Stateful on Kubernetes
+## Why Stateful Applications on Kubernetes
 
-According to past DoK reports, the following are some of the reasons 
-- Kubernetes has become a core part of IT – half of the respondents are running 50% or more of their production workloads on it, and they are very satisfied and more productive as a result. The most advanced users report 2x or greater productivity gains.
-- Business demands are creating pressures for further adoption. The increasing importance of real-time data to competitive advantage will sharpen companiesʼ need to run data on Kubernetes. A majority believe standards will improve data management and that data should become declarative.
-- Standardization is the key driver for Kubernetes Leaders.
-
+Running databases and message queues on Kubernetes is becoming more common, and not just for development environments. Various features of the Kubernetes ecosystem enable and simplify operations for these stateful workloads.
+ - Health checks and automated restarts of application pods
+ - The Kubernetes Operator model allows specialists to encode the processes for setting up and managing a stateful application into a program. This program can then manage the initial configuration of the application and ongoing operations tasks like backups and upgrades
+ - Declaritive configuration - specifying the desired configuration of the stateful application, rather than the steps to reach that configuration - allows these configurations to be version managed (enabling **GitOps**) and simplifies compliance checks and enforcement on configurations. The process of reconciling the current and desired configurations is managed partly by the Kubernetes controllers and partly by the Operator for the application.
+Links to further information on these features, and how they enable stateful application on on Kubernetes, are in the sections below.
 
 ## Intro to Stateful
 
