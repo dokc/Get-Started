@@ -4,9 +4,9 @@ Contributors: Paul Au, Jonathan Battiato, Vindod Kumar, Alex Lines, Kallio Prine
 
 ## About this Guide
 
-Learning a new technology, and finding the community resources to help you learn that technology, can be quite a task. In this guide we have curated links to existing information which can help a Data on Kubernetes beginner get started. The guide is broken into sections providing theoretical and practical information to get a first stateful application on deployed kubernetes.
+Learning a new technology, and finding the community resources to help you learn that technology, can be quite a task. In this guide we have curated links to existing information which can help a Data on Kubernetes beginner get started. The guide is broken into sections providing theoretical and practical information to get started with data on Kubernetes as well as deploy your first stateful application on Kubernetes.
 
-For more expert memebers of the community, this guide is also intended to capture gaps in existing content so we can, as a community, fill those gaps.
+For more expert members of the community, this guide is also intended to capture gaps in existing content so we can, as a community, fill those gaps.
 
 
 ## Table of Contents
@@ -46,19 +46,29 @@ Kubernetes supports data persistency for this type of workloads thanks to the AP
 Provide a list of stateful workloads that exist on Kubernetes and a description/examples of each workload
 Stateful Workloads
 
-- Databases (stateful sets or CRD)
-- AI/ML (usually jobs) - [https://developers.redhat.com/aiml/ai-workloads](https://developers.redhat.com/aiml/ai-workloads)
+- Databases (StatefulSets or CRD)
+    - [MySQL](https://github.com/kubernetes/website/blob/main/content/en/examples/application/mysql/mysql-statefulset.yaml)
+    - [Database Operators](https://operatorhub.io/?category=Database)
+- AI/ML (usually jobs) 
+  - [https://developers.redhat.com/aiml/ai-workloads](https://developers.redhat.com/aiml/ai-workloads)
+  - [AI/ML Operators](https://operatorhub.io/?category=AI%2FMachine+Learning)
 - Batch processing jobs
 - Stream processing
-- Machine learning and AI workloads
+  - [Streaming and Messaging Operators](https://operatorhub.io/?category=Streaming+%26+Messaging)
 - Data analytics
 - ETL (Extract, Transform, Load) pipelines
 - Data warehousing
 - Distributed databases
+  - [Cassandra](https://github.com/kubernetes/website/blob/main/content/en/examples/application/cassandra/cassandra-statefulset.yaml) 
 - In-memory data grids
 - Time series databases
 - Search and indexing engines
-
+  - [Elastic Stack](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-deploy-eck.html)
+- Game Servers
+- Content Management and Storage Systems
+- CI/CD Systems
+- Virtual Machines
+  [KubeVirt](https://kubevirt.io/)
 
 ## Operators 101
 
@@ -67,10 +77,10 @@ Stateful Workloads
 Operators takes knowledge of how to implement, deploy, run, maintain and protect software applications on Kubernetes and puts it into a repeatable framework for automation. The framework and automation in turn provide Day 1 Operations (installation, configuration, etc.) and Day 2 Operations (re-configuration, update, backup, failover, restore, etc.) for applications. You can read more about the framework at the [operatorframework.io](https://operatorframework.io/)
 
 #### Purpose
-Provide resources explaining what operators are and what role they play in running data workloads on kubernetes
+Provide resources explaining what operators are and what role they play in running data workloads on Kubernetes
 
 #### Resources:
-- [What is a kubernetes Operator](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator)
+- [What is a Kubernetes Operator](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator)
 - [What are Kubernetes Operators (Operators 101 :part 1)](https://sklar.rocks/what-are-kubernetes-operators/)
 - [Operator Pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
 - [Custom Resource Definitions](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
@@ -123,7 +133,7 @@ List and describe open source projects that are a part of the DoK Ecosystem. Thi
 
 ## Deploy your first database on kubernetes
 #### Purpose
-In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to kubernetes. 
+In this section, you'll learn how to use the knowledge you've accumulated to deploy a database to Kubernetes. 
 
 ### **Deploy MySQL using Killercoda Playground**
 
@@ -237,6 +247,7 @@ Next steps might be thinking beyond how to get started and tackeling some of the
 - Encryption
 - Running and managing multiple types of data services
 - Performance
+- Modern Virtualization (VMs on Kubernetes)
 
 #### Purpose
 In this section, we'll list some resources to push you to the next level of understanding.
@@ -244,6 +255,7 @@ In this section, we'll list some resources to push you to the next level of unde
 #### Resources:
 - [Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/)
 - [Open-source Backup Solution Velero](https://velero.io/)
+- [VMs on Kubernetes: KubeVirt](https://kubevirt.io/)
 
 ## Do you want to contribute?
 
